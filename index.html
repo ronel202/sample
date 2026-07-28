@@ -18,10 +18,10 @@
         }
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #1c080e; /* Deep rich maroon undertone */
+            background-color: #0c0205; /* Solid deep rich maroon undertone */
             color: #fce7f3;
             overflow-x: hidden;
-            font-size: 0.925rem; /* Slightly reduced base font size */
+            font-size: 0.925rem;
         }
         .font-serif {
             font-family: 'Playfair Display', serif;
@@ -31,13 +31,13 @@
             width: 10px;
         }
         ::-webkit-scrollbar-track {
-            background: #1c080e;
+            background: #0c0205;
             border-left: 1px solid rgba(191, 149, 63, 0.15);
         }
         ::-webkit-scrollbar-thumb {
             background: var(--gold-solid);
             border-radius: 5px;
-            border: 2px solid #1c080e;
+            border: 2px solid #0c0205;
         }
         ::-webkit-scrollbar-thumb:hover {
             background: #fcf6ba;
@@ -46,7 +46,7 @@
         /* Firefox scrollbar support */
         * {
             scrollbar-width: thin;
-            scrollbar-color: var(--gold-solid) #1c080e;
+            scrollbar-color: var(--gold-solid) #0c0205;
         }
 
         /* Smooth Mobile Menu Transition Classes */
@@ -86,7 +86,7 @@
 <body class="selection:bg-[#bf953f]/30 selection:text-white">
 
     <!-- NAVIGATION -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-[#2d0c16]/90 backdrop-blur-md border-b border-rose-950/50 transition-all duration-300">
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#16040a]/90 backdrop-blur-md border-b border-[#3b0817] transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="font-serif text-2xl font-bold tracking-wider text-[#bf953f]" style="background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
                 THELMA'S<span class="text-rose-200 text-sm block font-sans tracking-widest font-normal -webkit-text-fill-color: initial;">CATERING SERVICES</span>
@@ -100,7 +100,7 @@
             </nav>
             <div class="flex items-center space-x-4">
                 <!-- Desktop View: Only 'Order Now' button shown here -->
-                <a href="#order" class="hidden sm:inline-flex items-center gap-2 text-[#2d0c16] font-bold px-6 py-2.5 rounded-full text-xs tracking-wider uppercase transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-105 shadow-lg shadow-[#bf953f]/25 border border-[#bf953f]/40" style="background: var(--gold-gradient);">
+                <a href="#order" class="hidden sm:inline-flex items-center gap-2 text-[#16040a] font-bold px-6 py-2.5 rounded-full text-xs tracking-wider uppercase transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-105 shadow-lg shadow-[#bf953f]/25 border border-[#bf953f]/40" style="background: var(--gold-gradient);">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
                     Order Now
                 </a>
@@ -116,7 +116,7 @@
         </div>
 
         <!-- Mobile Menu Dropdown with Catering Transition Effects -->
-        <div id="mobile-menu" class="md:hidden bg-[#2d0c16] border-rose-950 px-6 space-y-4 shadow-2xl">
+        <div id="mobile-menu" class="md:hidden bg-[#16040a] border-[#3b0817] px-6 space-y-4 shadow-2xl">
             <nav class="flex flex-col space-y-4 text-base font-medium tracking-wide text-rose-200">
                 <a href="#experiences" class="mobile-link hover:text-[#bf953f] transition-colors flex items-center gap-3 py-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-[#bf953f]"></span> Experiences
@@ -131,7 +131,7 @@
                     <span class="w-1.5 h-1.5 rounded-full bg-[#bf953f]"></span> Consultation Inquiry
                 </a>
                 <!-- Added Order Now button strictly visible on mobile inside burger menu -->
-                <a href="#order" class="mobile-link sm:hidden inline-flex items-center justify-center gap-2 text-[#2d0c16] font-bold px-6 py-3 rounded-xl text-xs tracking-wider uppercase shadow-lg shadow-[#bf953f]/25 border border-[#bf953f]/40 mt-3 hover:scale-[1.02] transition-transform" style="background: var(--gold-gradient);">
+                <a href="#order" class="mobile-link sm:hidden inline-flex items-center justify-center gap-2 text-[#16040a] font-bold px-6 py-3 rounded-xl text-xs tracking-wider uppercase shadow-lg shadow-[#bf953f]/25 border border-[#bf953f]/40 mt-3 hover:scale-[1.02] transition-transform" style="background: var(--gold-gradient);">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
                     Order Now
                 </a>
@@ -143,36 +143,44 @@
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover scale-105 animate-pulse duration-1000 opacity-30" alt="Catering Setup">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#1c080e] via-[#1c080e]/70 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0c0205] via-[#0c0205]/70 to-transparent"></div>
         </div>
-        <div class="relative z-10 text-center max-w-4xl mx-auto px-6 mt-12">
-            <span class="uppercase tracking-[0.3em] text-[11px] font-semibold block mb-3" style="color: var(--gold-solid);">Elite Gastronomy & Styling</span>
-            <h1 class="font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 leading-tight text-white">
-                Crafting <span class="italic font-normal" style="color: var(--gold-solid);">Unforgettable</span> Dining Moments
-            </h1>
-            <p class="text-rose-100/80 text-xs sm:text-sm md:text-base max-w-2xl mx-auto font-light mb-8 leading-relaxed">
-                Transforming milestone celebrations into breathtaking sensory experiences through immaculate tablescapes and world-class culinary curation.
-            </p>
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-6 mt-4 sm:mt-8">
+            <!-- Trailer Cinematic Wrapper with absolute stacking so elite, title, and desc occupy the exact same space without jumping to next lines -->
+            <div id="hero-trailer" class="relative min-h-[150px] sm:min-h-[170px] md:min-h-[200px] flex items-center justify-center mb-4">
+                <span id="trailer-tag" class="absolute inset-x-0 top-1/2 -translate-y-1/2 uppercase tracking-[0.3em] text-[11px] font-semibold opacity-0 transform translate-y-4 pointer-events-none" style="color: var(--gold-solid);">Elite Gastronomy & Styling</span>
+                <h1 id="trailer-title" class="absolute inset-x-0 top-1/3 -translate-y-1/2 font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white opacity-0 transform translate-y-4 pointer-events-none">
+                    Crafting <span class="italic font-normal" style="color: var(--gold-solid);">Unforgettable</span> Dining Moments
+                </h1>
+                <p id="trailer-desc" class="absolute inset-x-0 top-1/2 -translate-y-1/2 text-rose-100/80 text-xs sm:text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed opacity-0 transform translate-y-4 pointer-events-none">
+                    Transforming milestone celebrations into breathtaking sensory experiences through immaculate tablescapes and world-class culinary curation.
+                </p>
+            </div>
+            
+            <!-- Scroll to Immerse Widget -->
+            <div class="flex justify-center mb-6">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#16040a]/80 border border-[#bf953f]/40 backdrop-blur-md shadow-xl shadow-black/50 cursor-pointer group hover:border-[#fcf6ba] transition-all" onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });">
+                    <span class="text-[11px] tracking-widest uppercase font-semibold text-[#fcf6ba] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] group-hover:text-white transition-colors">Scroll to Immerse</span>
+                    <div class="w-5 h-5 rounded-full bg-[#bf953f]/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <div class="w-1 h-2 bg-gradient-to-b from-[#bf953f] to-[#fcf6ba] rounded-full animate-bounce"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#order" class="w-full sm:w-auto text-[#2d0c16] font-bold px-7 py-3 rounded-full text-[11px] sm:text-xs tracking-wider uppercase hover:opacity-90 hover:scale-105 transition-all shadow-xl shadow-[#bf953f]/20" style="background: var(--gold-gradient);">
+                <a href="#order" class="w-full sm:w-auto text-[#16040a] font-bold px-7 py-3 rounded-full text-[11px] sm:text-xs tracking-wider uppercase hover:opacity-90 hover:scale-105 transition-all shadow-xl shadow-[#bf953f]/20" style="background: var(--gold-gradient);">
                     Order Now (Food Delivery)
                 </a>
-                <a href="#consultation" class="w-full sm:w-auto text-[#2d0c16] font-bold px-7 py-3 rounded-full text-[11px] sm:text-xs tracking-wider uppercase hover:opacity-90 hover:scale-105 transition-all shadow-xl shadow-[#bf953f]/20 border border-[#bf953f]/50" style="background: var(--gold-gradient);">
+                <a href="#consultation" class="w-full sm:w-auto text-[#16040a] font-bold px-7 py-3 rounded-full text-[11px] sm:text-xs tracking-wider uppercase hover:opacity-90 hover:scale-105 transition-all shadow-xl shadow-[#bf953f]/20 border border-[#bf953f]/50" style="background: var(--gold-gradient);">
                     Consultation Inquiry
                 </a>
-            </div>
-        </div>
-        <!-- Scroll indicator (Floating properly above buttons/bottom frame with improved gold highlight and hover/bounce) -->
-        <div class="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-1.5 z-30 pointer-events-auto cursor-pointer group" onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });">
-            <span class="text-[11px] tracking-widest uppercase font-semibold text-[#fcf6ba] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] group-hover:text-white transition-colors">Scroll to Immerse</span>
-            <div class="w-6 h-6 rounded-full border border-[#bf953f]/60 bg-[#2d0c16]/80 flex items-center justify-center shadow-lg shadow-[#bf953f]/30 group-hover:scale-110 group-hover:border-[#fcf6ba] transition-all">
-                <div class="w-1.5 h-2.5 bg-gradient-to-b from-[#bf953f] to-[#fcf6ba] rounded-full animate-bounce"></div>
             </div>
         </div>
     </section>
 
     <!-- HORIZONTAL SCROLL GALLERY SECTION -->
-    <section id="gallery" class="relative h-[300vh] bg-[#1c080e]">
+    <section id="gallery" class="relative h-[300vh] bg-[#0c0205]">
         <div class="sticky top-0 h-screen flex items-center overflow-hidden">
             <div class="absolute top-12 left-6 md:left-16 z-20">
                 <span class="uppercase tracking-[0.2em] text-xs font-semibold block" style="color: var(--gold-solid);">Immersive Visual Showcase</span>
@@ -183,9 +191,9 @@
             <div class="horizontal-track flex gap-8 px-12 md:px-24 w-max">
                 
                 <!-- Card 1 -->
-                <div class="w-[85vw] md:w-[500px] h-[65vh] bg-[#2d0c16] rounded-2xl overflow-hidden relative group border border-rose-950 flex-shrink-0 shadow-2xl">
+                <div class="w-[85vw] md:w-[500px] h-[65vh] bg-[#16040a] rounded-2xl overflow-hidden relative group border border-[#3b0817] flex-shrink-0 shadow-2xl">
                     <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" alt="Grand Wedding Reception">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#1c080e] via-[#1c080e]/40 to-transparent flex flex-col justify-end p-8">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0c0205] via-[#0c0205]/40 to-transparent flex flex-col justify-end p-8">
                         <span class="text-xs tracking-widest uppercase mb-2" style="color: var(--gold-solid);">Grand Reception</span>
                         <h3 class="font-serif text-2xl md:text-3xl font-bold text-white mb-2">Royal Golden Gala Setup</h3>
                         <p class="text-rose-100/80 text-sm font-light">Custom floral cascades, crystal chandeliers, and curated tablescapes built for elite luxury weddings.</p>
@@ -193,9 +201,9 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="w-[85vw] md:w-[500px] h-[65vh] bg-[#2d0c16] rounded-2xl overflow-hidden relative group border border-rose-950 flex-shrink-0 shadow-2xl">
+                <div class="w-[85vw] md:w-[500px] h-[65vh] bg-[#16040a] rounded-2xl overflow-hidden relative group border border-[#3b0817] flex-shrink-0 shadow-2xl">
                     <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" alt="Outdoor Garden Banquet">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#1c080e] via-[#1c080e]/40 to-transparent flex flex-col justify-end p-8">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0c0205] via-[#0c0205]/40 to-transparent flex flex-col justify-end p-8">
                         <span class="text-xs tracking-widest uppercase mb-2" style="color: var(--gold-solid);">Garden Elegance</span>
                         <h3 class="font-serif text-2xl md:text-3xl font-bold text-white mb-2">Botanical Twilight Setup</h3>
                         <p class="text-rose-100/80 text-sm font-light">Al fresco dining styled with ambient Edison lighting, rustic wooden textures, and organic botanicals.</p>
@@ -203,9 +211,9 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="w-[85vw] md:w-[500px] h-[65vh] bg-[#2d0c16] rounded-2xl overflow-hidden relative group border border-rose-950 flex-shrink-0 shadow-2xl">
+                <div class="w-[85vw] md:w-[500px] h-[65vh] bg-[#16040a] rounded-2xl overflow-hidden relative group border border-[#3b0817] flex-shrink-0 shadow-2xl">
                     <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" alt="Corporate Executive Banquet">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#1c080e] via-[#1c080e]/40 to-transparent flex flex-col justify-end p-8">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0c0205] via-[#0c0205]/40 to-transparent flex flex-col justify-end p-8">
                         <span class="text-xs tracking-widest uppercase mb-2" style="color: var(--gold-solid);">Executive Affair</span>
                         <h3 class="font-serif text-2xl md:text-3xl font-bold text-white mb-2">Modern Minimalist Corporate Setup</h3>
                         <p class="text-rose-100/80 text-sm font-light">Sleek monochrome aesthetics combined with precision plating stations and executive lounge arrangements.</p>
@@ -213,9 +221,9 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="w-[85vw] md:w-[500px] h-[65vh] bg-[#2d0c16] rounded-2xl overflow-hidden relative group border border-rose-950 flex-shrink-0 shadow-2xl">
+                <div class="w-[85vw] md:w-[500px] h-[65vh] bg-[#16040a] rounded-2xl overflow-hidden relative group border border-[#3b0817] flex-shrink-0 shadow-2xl">
                     <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" alt="Vibrant Milestone Celebration">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#1c080e] via-[#1c080e]/40 to-transparent flex flex-col justify-end p-8">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0c0205] via-[#0c0205]/40 to-transparent flex flex-col justify-end p-8">
                         <span class="text-xs tracking-widest uppercase mb-2" style="color: var(--gold-solid);">Milestone Celebration</span>
                         <h3 class="font-serif text-2xl md:text-3xl font-bold text-white mb-2">Opulent Anniversary & Buffet Bar</h3>
                         <p class="text-rose-100/80 text-sm font-light">Interactive live carving stations paired with artfully arranged multi-tiered culinary displays.</p>
@@ -227,7 +235,7 @@
     </section>
 
     <!-- CINEMATIC PARALLAX BREAKOUT SECTION -->
-    <section id="experiences" class="py-32 bg-[#250a13] relative overflow-hidden border-t border-b border-rose-950/40">
+    <section id="experiences" class="py-32 bg-[#120307] relative overflow-hidden border-t border-b border-[#3b0817]/40">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
                 <span class="uppercase tracking-[0.2em] text-xs font-semibold block mb-3" style="color: var(--gold-solid);">Precision & Passion</span>
@@ -235,7 +243,7 @@
                 <p class="text-rose-100/80 font-light leading-relaxed mb-8">
                     From the architecture of our custom tablescapes to the precision timing of our white-glove waitstaff, Thelma's Food and Catering Services delivers an uncompromising standard of hospitality. We manage every single element so you can savor every precious moment.
                 </p>
-                <div class="grid grid-cols-2 gap-6 border-t border-rose-950 pt-8">
+                <div class="grid grid-cols-2 gap-6 border-t border-[#3b0817] pt-8">
                     <div>
                         <h4 class="font-serif text-3xl font-bold mb-1" style="color: var(--gold-solid);">15+</h4>
                         <p class="text-rose-200/70 text-sm">Years of Culinary Mastery</p>
@@ -246,30 +254,30 @@
                     </div>
                 </div>
             </div>
-            <div class="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-rose-950">
+            <div class="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-[#3b0817]">
                 <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 opacity-90" alt="Catering Chef Plating">
             </div>
         </div>
     </section>
 
     <!-- SIGNATURE MENU PREVIEW -->
-    <section id="menu" class="py-32 bg-[#1c080e] px-6">
+    <section id="menu" class="py-32 bg-[#0c0205] px-6">
         <div class="max-w-5xl mx-auto text-center mb-20">
             <span class="uppercase tracking-[0.2em] text-xs font-semibold block mb-3" style="color: var(--gold-solid);">Gastronomic Excellence</span>
             <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">Signature Culinary Selections</h2>
             <div class="flex flex-wrap items-center justify-center gap-4">
-                <a href="#order" class="inline-block text-[#2d0c16] font-bold px-8 py-3 rounded-full text-xs tracking-widest uppercase transition-all shadow-lg shadow-[#bf953f]/10 hover:scale-105" style="background: var(--gold-gradient);">
+                <a href="#order" class="inline-block text-[#16040a] font-bold px-8 py-3 rounded-full text-xs tracking-widest uppercase transition-all shadow-lg shadow-[#bf953f]/10 hover:scale-105" style="background: var(--gold-gradient);">
                     Jump to Direct Food Ordering
                 </a>
-                <a href="#consultation" class="inline-block bg-[#360e1a] border border-[#bf953f]/50 hover:border-[#bf953f] font-bold px-8 py-3 rounded-full text-xs tracking-widest uppercase transition-all shadow-lg hover:scale-105" style="color: var(--gold-solid);">
+                <a href="#consultation" class="inline-block bg-[#1f050d] border border-[#bf953f]/50 hover:border-[#bf953f] font-bold px-8 py-3 rounded-full text-xs tracking-widest uppercase transition-all shadow-lg hover:scale-105" style="color: var(--gold-solid);">
                     Book Event Consultation
                 </a>
             </div>
         </div>
         <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <!-- Item 1 -->
-            <div class="flex gap-6 items-start border-b border-rose-950/80 pb-8">
-                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=200&auto=format&fit=crop" class="w-24 h-24 object-cover rounded-xl flex-shrink-0 border border-rose-950" alt="Dish">
+            <div class="flex gap-6 items-start border-b border-[#3b0817]/80 pb-8">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=200&auto=format&fit=crop" class="w-24 h-24 object-cover rounded-xl flex-shrink-0 border border-[#3b0817]" alt="Dish">
                 <div>
                     <div class="flex justify-between items-baseline mb-2">
                         <h3 class="font-serif text-xl font-bold text-white">Truffle Herb-Crusted Prime Rib</h3>
@@ -280,8 +288,8 @@
                 </div>
             </div>
             <!-- Item 2 -->
-            <div class="flex gap-6 items-start border-b border-rose-950/80 pb-8">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=200&auto=format&fit=crop" class="w-24 h-24 object-cover rounded-xl flex-shrink-0 border border-rose-950" alt="Dish">
+            <div class="flex gap-6 items-start border-b border-[#3b0817]/80 pb-8">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=200&auto=format&fit=crop" class="w-24 h-24 object-cover rounded-xl flex-shrink-0 border border-[#3b0817]" alt="Dish">
                 <div>
                     <div class="flex justify-between items-baseline mb-2">
                         <h3 class="font-serif text-xl font-bold text-white">Pan-Seared Chilean Sea Bass</h3>
@@ -292,8 +300,8 @@
                 </div>
             </div>
             <!-- Item 3 -->
-            <div class="flex gap-6 items-start border-b border-rose-950/80 pb-8">
-                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=200&auto=format&fit=crop" class="w-24 h-24 object-cover rounded-xl flex-shrink-0 border border-rose-950" alt="Dish">
+            <div class="flex gap-6 items-start border-b border-[#3b0817]/80 pb-8">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=200&auto=format&fit=crop" class="w-24 h-24 object-cover rounded-xl flex-shrink-0 border border-[#3b0817]" alt="Dish">
                 <div>
                     <div class="flex justify-between items-baseline mb-2">
                         <h3 class="font-serif text-xl font-bold text-white">Artisanal Grazing Boards</h3>
@@ -304,8 +312,8 @@
                 </div>
             </div>
             <!-- Item 4 -->
-            <div class="flex gap-6 items-start border-b border-rose-950/80 pb-8">
-                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=200&auto=format&fit=crop" class="w-24 h-24 object-cover rounded-xl flex-shrink-0 border border-rose-950" alt="Dish">
+            <div class="flex gap-6 items-start border-b border-[#3b0817]/80 pb-8">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=200&auto=format&fit=crop" class="w-24 h-24 object-cover rounded-xl flex-shrink-0 border border-[#3b0817]" alt="Dish">
                 <div>
                     <div class="flex justify-between items-baseline mb-2">
                         <h3 class="font-serif text-xl font-bold text-white">Belgian Dark Chocolate Ganache</h3>
@@ -319,13 +327,13 @@
     </section>
 
     <!-- CONSULTATION INQUIRY SECTION -->
-    <section id="consultation" class="py-32 bg-gradient-to-b from-[#1c080e] via-[#2d0c16] to-[#1c080e] border-t border-b border-[#bf953f]/30 px-6 relative">
+    <section id="consultation" class="py-32 bg-gradient-to-b from-[#0c0205] via-[#16040a] to-[#0c0205] border-t border-b border-[#bf953f]/30 px-6 relative">
         <!-- Glow Backdrop -->
         <div class="absolute inset-0 bg-[#bf953f]/5 pointer-events-none filter blur-3xl"></div>
         
-        <div class="relative max-w-4xl mx-auto bg-[#1c080e] p-8 md:p-14 rounded-3xl border-2 border-[#bf953f] shadow-[0_0_50px_rgba(191,149,63,0.15)]">
+        <div class="relative max-w-4xl mx-auto bg-[#0c0205] p-8 md:p-14 rounded-3xl border-2 border-[#bf953f] shadow-[0_0_50px_rgba(191,149,63,0.15)]">
             <div class="text-center mb-10">
-                <span class="inline-block text-[#1c080e] px-4 py-1 rounded-full text-[11px] font-bold uppercase tracking-[0.2em] mb-3 shadow-md" style="background: var(--gold-gradient);">Exclusive Event Booking</span>
+                <span class="inline-block text-[#16040a] px-4 py-1 rounded-full text-[11px] font-bold uppercase tracking-[0.2em] mb-3 shadow-md" style="background: var(--gold-gradient);">Exclusive Event Booking</span>
                 <h2 class="font-serif text-3xl md:text-5xl font-bold text-white">Consultation Inquiry</h2>
                 <p class="text-rose-100/80 text-sm mt-3 max-w-xl mx-auto">Plan your grand weddings, corporate galas, or milestone celebrations with our elite culinary directors and styling consultants.</p>
             </div>
@@ -334,18 +342,18 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs uppercase tracking-wider mb-2 font-semibold text-rose-200">Full Name / Representative</label>
-                        <input type="text" required class="w-full bg-[#2d0c16] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Enter your full name">
+                        <input type="text" required class="w-full bg-[#16040a] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Enter your full name">
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-wider mb-2 font-semibold text-rose-200">Contact Number</label>
-                        <input type="tel" required class="w-full bg-[#2d0c16] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="e.g. 09123456789">
+                        <input type="tel" required class="w-full bg-[#16040a] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="e.g. 09123456789">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs uppercase tracking-wider mb-2 font-semibold text-rose-200">Event Type</label>
-                        <select class="w-full bg-[#2d0c16] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors">
+                        <select class="w-full bg-[#16040a] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors">
                             <option>Grand Wedding Reception</option>
                             <option>Corporate Executive Banquet</option>
                             <option>Milestone Anniversary / Birthday</option>
@@ -354,27 +362,27 @@
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-wider mb-2 font-semibold text-rose-200">Estimated Guest Count</label>
-                        <input type="number" min="20" placeholder="e.g. 150 guests" class="w-full bg-[#2d0c16] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors">
+                        <input type="number" min="20" placeholder="e.g. 150 guests" class="w-full bg-[#16040a] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs uppercase tracking-wider mb-2 font-semibold text-rose-200">Target Event Date</label>
-                        <input type="date" required class="w-full bg-[#2d0c16] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors">
+                        <input type="date" required class="w-full bg-[#16040a] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors">
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-wider mb-2 font-semibold text-rose-200">Preferred Venue / Location</label>
-                        <input type="text" required class="w-full bg-[#2d0c16] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Venue name or city address">
+                        <input type="text" required class="w-full bg-[#16040a] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Venue name or city address">
                     </div>
                 </div>
 
                 <div>
                     <label class="block text-xs uppercase tracking-wider mb-2 font-semibold text-rose-200">Specific Event Vision & Requests</label>
-                    <textarea rows="3" class="w-full bg-[#2d0c16] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Share your theme preferences, dietary requirements, or styling details..."></textarea>
+                    <textarea rows="3" class="w-full bg-[#16040a] border border-[#bf953f]/40 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Share your theme preferences, dietary requirements, or styling details..."></textarea>
                 </div>
 
-                <button type="submit" class="w-full text-[#2d0c16] font-bold py-4 rounded-xl uppercase tracking-widest text-sm transition-all shadow-xl shadow-[#bf953f]/20 border border-[#bf953f]/50 hover:opacity-90 hover:scale-[1.01]" style="background: var(--gold-gradient);">
+                <button type="submit" class="w-full text-[#16040a] font-bold py-4 rounded-xl uppercase tracking-widest text-sm transition-all shadow-xl shadow-[#bf953f]/20 border border-[#bf953f]/50 hover:opacity-90 hover:scale-[1.01]" style="background: var(--gold-gradient);">
                     Submit Consultation Inquiry
                 </button>
             </form>
@@ -382,8 +390,8 @@
     </section>
 
     <!-- ORDER NOW (FOOD ORDERING) SECTION -->
-    <section id="order" class="py-32 bg-[#2d0c16] border-t border-b border-rose-950 px-6">
-        <div class="max-w-4xl mx-auto bg-[#1c080e] p-8 md:p-14 rounded-3xl border border-[#bf953f]/30 shadow-2xl">
+    <section id="order" class="py-32 bg-[#16040a] border-t border-b border-[#3b0817] px-6">
+        <div class="max-w-4xl mx-auto bg-[#0c0205] p-8 md:p-14 rounded-3xl border border-[#bf953f]/30 shadow-2xl">
             <div class="text-center mb-10">
                 <span class="uppercase tracking-[0.2em] text-xs font-semibold block mb-2" style="color: var(--gold-solid);">Express Delivery & Takeout</span>
                 <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Order Now</h2>
@@ -395,69 +403,69 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs uppercase tracking-wider text-rose-200/70 mb-2">Full Name</label>
-                        <input type="text" required class="w-full bg-[#2d0c16] border border-rose-950 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Enter your name">
+                        <input type="text" required class="w-full bg-[#16040a] border border-[#3b0817] rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Enter your name">
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-wider text-rose-200/70 mb-2">Contact Number</label>
-                        <input type="tel" required class="w-full bg-[#2d0c16] border border-rose-950 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="e.g. 09123456789">
+                        <input type="tel" required class="w-full bg-[#16040a] border border-[#3b0817] rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="e.g. 09123456789">
                     </div>
                 </div>
 
                 <div>
                     <label class="block text-xs uppercase tracking-wider text-rose-200/70 mb-2">Delivery Address</label>
-                    <textarea rows="2" required class="w-full bg-[#2d0c16] border border-rose-950 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Street, Barangay, City..."></textarea>
+                    <textarea rows="2" required class="w-full bg-[#16040a] border border-[#3b0817] rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors" placeholder="Street, Barangay, City..."></textarea>
                 </div>
 
                 <!-- Food Order Items Selector -->
-                <div class="border-t border-rose-950 pt-6">
+                <div class="border-t border-[#3b0817] pt-6">
                     <h3 class="font-serif text-xl font-bold text-white mb-4">Select Your Menu Items</h3>
                     <div class="space-y-4">
                         
                         <!-- Item Row 1 -->
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#2d0c16]/60 p-4 rounded-xl border border-rose-950">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#16040a]/60 p-4 rounded-xl border border-[#3b0817]">
                             <div>
                                 <h4 class="font-medium text-white">Truffle Herb-Crusted Prime Rib</h4>
                                 <span class="text-xs font-mono" style="color: var(--gold-solid);">₱1,450 per serving</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <label class="text-xs uppercase text-rose-200/70">Qty:</label>
-                                <input type="number" min="0" value="0" class="w-20 bg-[#1c080e] border border-rose-950 rounded-lg px-3 py-2 text-white text-center focus:outline-none focus:border-[#bf953f]">
+                                <input type="number" min="0" value="0" class="w-20 bg-[#0c0205] border border-[#3b0817] rounded-lg px-3 py-2 text-white text-center focus:outline-none focus:border-[#bf953f]">
                             </div>
                         </div>
 
                         <!-- Item Row 2 -->
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#2d0c16]/60 p-4 rounded-xl border border-rose-950">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#16040a]/60 p-4 rounded-xl border border-[#3b0817]">
                             <div>
                                 <h4 class="font-medium text-white">Pan-Seared Chilean Sea Bass</h4>
                                 <span class="text-xs font-mono" style="color: var(--gold-solid);">₱1,280 per serving</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <label class="text-xs uppercase text-rose-200/70">Qty:</label>
-                                <input type="number" min="0" value="0" class="w-20 bg-[#1c080e] border border-rose-950 rounded-lg px-3 py-2 text-white text-center focus:outline-none focus:border-[#bf953f]">
+                                <input type="number" min="0" value="0" class="w-20 bg-[#0c0205] border border-[#3b0817] rounded-lg px-3 py-2 text-white text-center focus:outline-none focus:border-[#bf953f]">
                             </div>
                         </div>
 
                         <!-- Item Row 3 -->
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#2d0c16]/60 p-4 rounded-xl border border-rose-950">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#16040a]/60 p-4 rounded-xl border border-[#3b0817]">
                             <div>
                                 <h4 class="font-medium text-white">Artisanal Grazing Boards</h4>
                                 <span class="text-xs font-mono" style="color: var(--gold-solid);">₱950 per board</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <label class="text-xs uppercase text-rose-200/70">Qty:</label>
-                                <input type="number" min="0" value="0" class="w-20 bg-[#1c080e] border border-rose-950 rounded-lg px-3 py-2 text-white text-center focus:outline-none focus:border-[#bf953f]">
+                                <input type="number" min="0" value="0" class="w-20 bg-[#0c0205] border border-[#3b0817] rounded-lg px-3 py-2 text-white text-center focus:outline-none focus:border-[#bf953f]">
                             </div>
                         </div>
 
                         <!-- Item Row 4 -->
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#2d0c16]/60 p-4 rounded-xl border border-rose-950">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#16040a]/60 p-4 rounded-xl border border-[#3b0817]">
                             <div>
                                 <h4 class="font-medium text-white">Belgian Dark Chocolate Ganache</h4>
                                 <span class="text-xs font-mono" style="color: var(--gold-solid);">₱420 per slice</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <label class="text-xs uppercase text-rose-200/70">Qty:</label>
-                                <input type="number" min="0" value="0" class="w-20 bg-[#1c080e] border border-rose-950 rounded-lg px-3 py-2 text-white text-center focus:outline-none focus:border-[#bf953f]">
+                                <input type="number" min="0" value="0" class="w-20 bg-[#0c0205] border border-[#3b0817] rounded-lg px-3 py-2 text-white text-center focus:outline-none focus:border-[#bf953f]">
                             </div>
                         </div>
 
@@ -466,14 +474,14 @@
 
                 <div>
                     <label class="block text-xs uppercase tracking-wider text-rose-200/70 mb-2">Payment Method</label>
-                    <select class="w-full bg-[#2d0c16] border border-rose-950 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors">
+                    <select class="w-full bg-[#16040a] border border-[#3b0817] rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#bf953f] transition-colors">
                         <option>Cash on Delivery (COD)</option>
                         <option>GCash / Mobile Banking Transfer</option>
                         <option>Credit / Debit Card</option>
                     </select>
                 </div>
 
-                <button type="submit" class="w-full text-[#2d0c16] font-bold py-4 rounded-xl uppercase tracking-widest text-sm transition-all shadow-xl hover:opacity-90 hover:scale-[1.01]" style="background: var(--gold-gradient);">
+                <button type="submit" class="w-full text-[#16040a] font-bold py-4 rounded-xl uppercase tracking-widest text-sm transition-all shadow-xl hover:opacity-90 hover:scale-[1.01]" style="background: var(--gold-gradient);">
                     Confirm Food Order Now
                 </button>
             </form>
@@ -481,7 +489,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-[#1c080e] py-12 border-t border-rose-950 text-center text-rose-200/60 text-sm">
+    <footer class="bg-[#0c0205] py-12 border-t border-[#3b0817] text-center text-rose-200/60 text-sm">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
             <p class="font-serif text-lg font-bold tracking-wider" style="color: var(--gold-solid);">THELMA'S FOOD AND CATERING SERVICES</p>
             <p>© 2026 All Rights Reserved. Crafted for Elite Culinary Experiences.</p>
@@ -511,6 +519,29 @@
                 invalidateOnRefresh: true,
             }
         });
+
+        // Continuous Cinematic Trailer Sequence for Hero Text Elements
+        function initHeroTrailer() {
+            const tag = document.getElementById('trailer-tag');
+            const title = document.getElementById('trailer-title');
+            const desc = document.getElementById('trailer-desc');
+
+            const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+
+            // Step 1: Animate UPPERCASE Tag in
+            tl.to(tag, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" })
+              .to(tag, { opacity: 0, y: -15, duration: 0.6, ease: "power3.in", delay: 2.5 })
+
+            // Step 2: Animate H1 Header in
+              .to(title, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" })
+              .to(title, { opacity: 0, y: -15, duration: 0.6, ease: "power3.in", delay: 3.5 })
+
+            // Step 3: Animate Paragraph in
+              .to(desc, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" })
+              .to(desc, { opacity: 0, y: -15, duration: 0.6, ease: "power3.in", delay: 4.5 });
+        }
+
+        window.addEventListener('DOMContentLoaded', initHeroTrailer);
 
         // Mobile Menu Toggle Logic with Smooth Catering Transitions & Icon Morphing
         const menuBtn = document.getElementById('menu-btn');
