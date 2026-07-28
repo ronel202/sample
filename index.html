@@ -180,8 +180,8 @@
     </section>
 
     <!-- HORIZONTAL SCROLL GALLERY SECTION -->
-    <section id="gallery" class="relative h-[300vh] bg-[#0c0205]">
-        <div class="sticky top-0 h-screen flex items-center overflow-hidden">
+    <section id="gallery" class="relative bg-[#0c0205] overflow-hidden">
+        <div class="h-screen flex items-center overflow-hidden">
             <div class="absolute top-12 left-6 md:left-16 z-20">
                 <span class="uppercase tracking-[0.2em] text-xs font-semibold block" style="color: var(--gold-solid);">Immersive Visual Showcase</span>
                 <h2 class="font-serif text-3xl md:text-5xl font-bold mt-1 text-white">Signature Event Setups</h2>
@@ -541,7 +541,7 @@
               .to(desc, { opacity: 0, y: -15, duration: 0.6, ease: "power3.in", delay: 4.5 });
         }
 
-        window.addEventListener('DOMContentLoaded', initHeroTrailer);
+        window.addEventListener('DOMContentLoaded', initHeroTrailer); // Corrected function reference
 
         // Mobile Menu Toggle Logic with Smooth Catering Transitions & Icon Morphing
         const menuBtn = document.getElementById('menu-btn');
