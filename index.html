@@ -146,13 +146,13 @@
             <div class="absolute inset-0 bg-gradient-to-t from-[#0c0205] via-[#0c0205]/70 to-transparent"></div>
         </div>
         <div class="relative z-10 text-center max-w-4xl mx-auto px-6 mt-4 sm:mt-8">
-            <!-- Trailer Cinematic Wrapper with absolute stacking so elite, title, and desc occupy the exact same space without jumping to next lines -->
-            <div id="hero-trailer" class="relative min-h-[150px] sm:min-h-[170px] md:min-h-[200px] flex items-center justify-center mb-4">
-                <span id="trailer-tag" class="absolute inset-x-0 top-1/2 -translate-y-1/2 uppercase tracking-[0.3em] text-[11px] font-semibold opacity-0 transform translate-y-4 pointer-events-none" style="color: var(--gold-solid);">Elite Gastronomy & Styling</span>
-                <h1 id="trailer-title" class="absolute inset-x-0 top-1/3 -translate-y-1/2 font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white opacity-0 transform translate-y-4 pointer-events-none">
+            <!-- Trailer Cinematic Wrapper: Naalis na ang absolute positioning para mag-flow nang maayos at lumawak ang mga teksto nang natural pababa -->
+            <div id="hero-trailer" class="min-h-[140px] sm:min-h-[160px] flex flex-col items-center justify-center mb-6">
+                <span id="trailer-tag" class="uppercase tracking-[0.3em] text-[11px] font-semibold opacity-0 transform translate-y-4 mb-3 block" style="color: var(--gold-solid);">Elite Gastronomy & Styling</span>
+                <h1 id="trailer-title" class="font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white opacity-0 transform translate-y-4 mb-4">
                     Crafting <span class="italic font-normal" style="color: var(--gold-solid);">Unforgettable</span> Dining Moments
                 </h1>
-                <p id="trailer-desc" class="absolute inset-x-0 top-1/2 -translate-y-1/2 text-rose-100/80 text-xs sm:text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed opacity-0 transform translate-y-4 pointer-events-none">
+                <p id="trailer-desc" class="text-rose-100/80 text-xs sm:text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed opacity-0 transform translate-y-4">
                     Transforming milestone celebrations into breathtaking sensory experiences through immaculate tablescapes and world-class culinary curation.
                 </p>
             </div>
@@ -165,16 +165,6 @@
                         <div class="w-1 h-2 bg-gradient-to-b from-[#bf953f] to-[#fcf6ba] rounded-full animate-bounce"></div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#order" class="w-full sm:w-auto text-[#16040a] font-bold px-7 py-3 rounded-full text-[11px] sm:text-xs tracking-wider uppercase hover:opacity-90 hover:scale-105 transition-all shadow-xl shadow-[#bf953f]/20" style="background: var(--gold-gradient);">
-                    Order Now (Food Delivery)
-                </a>
-                <a href="#consultation" class="w-full sm:w-auto text-[#16040a] font-bold px-7 py-3 rounded-full text-[11px] sm:text-xs tracking-wider uppercase hover:opacity-90 hover:scale-105 transition-all shadow-xl shadow-[#bf953f]/20 border border-[#bf953f]/50" style="background: var(--gold-gradient);">
-                    Consultation Inquiry
-                </a>
             </div>
         </div>
     </section>
@@ -541,7 +531,7 @@
               .to(desc, { opacity: 0, y: -15, duration: 0.6, ease: "power3.in", delay: 4.5 });
         }
 
-        window.addEventListener('DOMContentLoaded', initHeroTrailer); // Corrected function reference
+        window.addEventListener('DOMContentLoaded', initHeroTrailer);
 
         // Mobile Menu Toggle Logic with Smooth Catering Transitions & Icon Morphing
         const menuBtn = document.getElementById('menu-btn');
